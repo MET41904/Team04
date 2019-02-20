@@ -12,32 +12,53 @@
 #include "auto.h"
 
 void compAutoRedRight(){
+
+driveForDistancePID(12, 60);
+pivotTurn(0, 50, 80);
+driveForDistancePID(3,60);
+liftMove(50);
+delay(1500);
+liftMove(0);
+liftMove(-75);
+delay(1520);
+liftMove(0);
+
+//driveForDistancePID(3,60);
+//liftMoveAngle(50, 60);
+//driveForDistancePID(8,60);
+//liftMoveAngle(50, -180);
+//driveForDistancePID(3, 60);
+//liftMoveAngle(50, 120);
+//driveForDistancePID(3,60);
+//liftMoveAngle(50, 60);
+//driveForDistancePID(8,60);
+//liftMoveAngle(50, -180);
+
+
   // All the veraious autonomous commands for the Competition, Red Sqaure
   // Right position go here.  THen this function is called in auto.c the autonomous()
   // function based on some selector input.
-//  driveForDistancePID(11, 60);
-//  turnRight(60);
-//  delayMicroseconds(5000);
-//  driveForDistancePID(48, 50);
-driveForDistancePID(6, 60);
-turnRight(60);
-delayMicroseconds(20000);
-driveForDistancePID(48, 60);
-driveForDistancePID(48,-60);
-turnLeft(60);
-delayMicroseconds(20000);
-driveForDistancePID(46, 60);
-turnRight(60);
-delayMicroseconds(20000);
-driveForDistancePID(46, 60);   // After turn drive a bit more forward
-//  driveForDistancePID(1100, 60);     // for 10 meter = 394" at speed 60
-//  pivotTurn(0, 30, 90);            // turn at seed 30 for 90 degree angle right turn
-//  driveForDistancePID(480, 50);     // After turn drive a bit more forward
-//  driveForDistancePID(480,-50);
-//  pivotTurn(1, 30, 90);
-//  driveForDistancePID(460, 50);
-//  pivotTurn(0, 30, 90);
-//  driveForDistancePID(480, 50);
+
+//pivotTurn(0, 50, 80);
+//driveForDistancePID(39, 60);
+//driveForDistancePID(-39,60);
+//pivotTurn(1,50,50);
+//driveForDistancePID(43,60);
+//pivotTurn(0,50,80);
+//driveForDistancePID(39,60);
+//driveForDistancePID(-39,60);
+//pivotTurn(1,50,50);
+//driveForDistancePID(46,60);
+//pivotTurn(0,50,80);
+//driveForDistancePID(36,60);
+//driveForDistancePID(-36,60);
+
+
+ // After turn drive a bit more forward
+     // for 10 meter = 394" at speed 60
+         // turn at seed 30 for 90 degree angle right turn
+     // After turn drive a bit more forward
+
 
 }
 
